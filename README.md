@@ -12,15 +12,7 @@ A small local GUI app to inspect `.avro` files:
 ## Requirements
 - Python 3.10+ recommended
 - Tkinter (usually included with Python on Windows/macOS; on Linux install `python3-tk`)
-- `fastavro`
-
-## Install
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/macOS: source .venv/bin/activate
-pip install -r requirements.txt
-```
+- fastavro
 
 ## Run
 ```bash
@@ -31,3 +23,8 @@ python main.py
 - Paging uses a simple approach: it re-opens the file and skips records to the needed page.
   This is reliable and memory-friendly, but going far back/forward in huge files can be slower.
 - Search scans the file sequentially and returns up to **Max results** matches.
+
+## Screenshots
+
+Main view
+![main_view.png](doc/screenshots/main_view.png)
